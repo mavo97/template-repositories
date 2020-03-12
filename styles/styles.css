@@ -19,3 +19,14 @@
 .btn-border {
     border: 1px solid #ececec;
 }
+
+.description-font {
+    font-size: 14px;
+    color: gray;
+}
+
+.update-font {
+    font-size: 14px;
+    color: gray;
+    font-style: italic;
+}
