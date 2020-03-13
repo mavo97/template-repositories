@@ -39,27 +39,44 @@
 
     <!-- Container -->
 
-    <div class="container">
+    <div>
 
         <div class="row main-container">
             <!-- profile -->
             <div class="col-sm-3">
-                <div class="card margin-profile">
-                    <img src="./vendor/images/teacher.png" class="card-img-top rounded" alt="..." width="100" height="200">
-                    <div class="card-body">
-                        <p class=" card-text ">
-                            <h3><b>Miguel Velazquez</b></h3>
-                            <h4>mavo97</h4>
-                        </p>
+                <div class="container">
+                    <div class="card">
+                        <img src="./vendor/images/teacher.png" class="card-img-top rounded" alt="..." width="100" height="200">
+                        <div class="card-body">
+                            <p class=" card-text ">
+                                <h4><b>Miguel Velazquez</b></h4>
+                                <h5>mavo97</h5>
+                            </p>
+                        </div>
                     </div>
+                    <br>
+                    <button type="button" class="btn btn-light btn-block btn-border"><b>Editar perfil</b></button>
                 </div>
-                <br>
-                <button type="button" class="btn btn-light btn-block margin-profile btn-border"><b>Editar perfil</b></button>
+
             </div>
 
-            <div class="col-sm-9 ">
-                <h4><b>Repositorios</b></h4>
-                <div class="main-container">
+            <div class="col-sm-9">
+
+                <div class="container main-container">
+                    <h4><b>Repositorios</b></h4>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Buscar repositorio" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <button class="btn btn-success">Nuevo</button>
+                        </div>
+                    </div>
+
+                    <hr>
 
                     <ul class="list-group">
                         <li class="list-group-item">
