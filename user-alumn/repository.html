@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repository</title>
+    <link rel="stylesheet" href="./vendor/b4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand main-name" href="./profile.html"><img src="./vendor/images/logotec.png" width="60" height="45" alt=""><b>Tec Valles</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./profile.html"><b>Inicio</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./users.html"><b>Usuarios</b></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar usuario" aria-label="Search">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container main-container">
+
+        <h5><i class="far fa-folder-open"></i> <a href="#">mavo97</a> / <a href="#"><b>mi-repositorio</b></a></h5>
+
+        <!-- repository code header -->
+        <div class="row justify-content-center">
+
+            <div class="col-sm-3 mb-1 justify-content-center">
+                <br>
+                <a type="button" class="btn btn-light" href="./commits.html"><i class="fas fa-clock"></i> 4 Commits</a>
+            </div>
+
+            <div class="col-sm-3 mb-1 justify-content-center">
+                <br>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-code-branch"></i><b> Branch:</b> master
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#"><i class="fas fa-code-branch"></i> master</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-code-branch"></i> test</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 justify-content-center">
+                <div class="form-group">
+                    <label for="url"><a onclick="copyUrl()" class="btn btn-light btn-sm"><i class="fas fa-copy"></i></a></i><small><b> Copiar url para clonar con HTTPS</b></small></label>
+                    <input type="text" id="url" class="form-control" value="https://github.com/mavo97/eventsapp.git" readonly>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Code -->
+        <h6><small>Latest commit
+               <a href="#">23d8e3d</a> 
+                on 28 Nov 2019</small></h6>
+        <div class="table-responsive-sm">
+
+            <table class="table table-hover table-sm">
+                <thead class="table-success">
+                    <tr>
+                        <th class="col-sm-8">
+                            <a href="#"><img src="./vendor/images/teacher.png" class="rounded float-left" width="25px" height="25px"></a><small><b>mavo97 </b> commit</small>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <i class="far fa-folder"></i> <a href="#"> src</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="far fa-folder"></i> <a href="#"> e2e</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="far fa-file-code"></i> <a href="#"> .editorconfig</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="far fa-file-code"></i> <a href="#"> .gitignore</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="far fa-file-code"></i> <a href="#"> README.md</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+
+
+
+
+        <!--README.md-->
+
+        <div class="table-responsive-sm">
+
+            <table class="table table-hover table-sm">
+                <thead style="background-color: #edffea;">
+                    <tr>
+                        <th class="col-sm-8">
+                            <h6><small><b><i class="fas fa-book-open"></i> README.md</b></small></h6>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><b>Eventsapp</b>
+                                <hr> This project was generated with Angular CLI version 8.3.17. <br><b>Development server</b>
+                                <hr> Run ng serve for a dev server. Navigate to http://localhost:4200/. <br> The app will automatically reload if you change any of the source files.
+                            </p> <br>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+
+</body>
+
+
+<script src="./vendor/jquery/jquery.slim.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+<script src="./vendor/b4/js/bootstrap.min.js "></script>
+<script src="https://kit.fontawesome.com/ee9095d957.js" crossorigin="anonymous"></script>
+<script src="./funciones/funciones.js"></script>
+
+</html>

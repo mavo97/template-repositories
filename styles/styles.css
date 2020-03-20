@@ -25,3 +25,7 @@
     color: gray;
     font-style: italic;
 }
+
+th.p {
+    text-align: right;
+}
